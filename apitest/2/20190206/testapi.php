@@ -119,7 +119,7 @@ if (!isset($_POST['submit'])) {
 <div class="thumbnail">
 <form class="form-signin" action="" method="post">
 <b>请填URL</b>:
-<input value="<?php echo isset($_POST['url'])?$_POST['url']:'http://adroadminv4.caixin.com/';?>" class="form-control" placeholder="填写完整地址，以http://开头" type="text" name="url" required><br>
+<input value="<?php echo isset($_POST['url'])?$_POST['url']:'http://';?>" class="form-control" placeholder="填写完整地址，以http://开头" type="text" name="url" required><br>
 <b>请求方式</b>:
 <label><input <?php if($item['method']=='get'):?>checked<?php endif;?> value="get" type="radio" name="param[<?php echo $k;?>][method]">get</label>
 <label><input <?php if($item['method']=='post'):?>checked<?php endif;?> value="post" type="radio" name="param[<?php echo $k;?>][method]">post</label><br />
