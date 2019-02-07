@@ -65,9 +65,30 @@
       
     if($_SERVER['REQUEST_METHOD'] != 'POST') exit('请求方式错误!');  
       
-      
+
+
     //发送请求  
-    function curl_query(){  
+    function curl_query(){
+
+        if($_POST['value1'] == "[time]"){
+            $_POST['value1'] = time();
+        }
+        if($_POST['value2'] == "[time]"){
+            $_POST['value2'] = time();
+        }
+        if($_POST['value3'] == "[time]"){
+            $_POST['value3'] = time();
+        }
+        if($_POST['value4'] == "[time]"){
+            $_POST['value4'] = time();
+        }
+        if($_POST['value5'] == "[time]"){
+            $_POST['value5'] = time();
+        }
+        if($_POST['value6'] == "[time]"){
+            $_POST['value6'] = time();
+        }
+
         $data = array(  
             $_POST['key1'] => $_POST['value1'],  
             $_POST['key2'] => $_POST['value2'],  

@@ -1,4 +1,4 @@
-<html xmlns="http://blog.csdn.net/sinat_35861727?viewmode=contents">
+<html>
  
 <head>
 	<meta http-equiv = "Content-Type" content = "text/html;charset = utf8">
